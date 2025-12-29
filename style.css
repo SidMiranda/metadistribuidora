@@ -293,7 +293,7 @@ img, picture, video, iframe { max-width: 100%; height: auto; display: block; }
 .sf-item p{ font-size:18px; font-weight:700; line-height:1.25; }
 
 /* ===== COMANDA ===== */
-.comanda{ background:#fff; padding:72px 24px 80px; color:#17324A; }
+.comanda{ background:#fff; padding:72px 24px 10px; color:#17324A; }
 .comanda-grid{ display:grid; grid-template-columns: 1.1fr 0.9fr; gap:40px; align-items:center; }
 .comanda-left img{ width:100%; height:auto; display:block; border-radius:8px; object-fit:cover; }
 .comanda-title span{ display:block; font-size:44px; font-weight:800; color:#0e2a3b; }
@@ -331,7 +331,7 @@ img, picture, video, iframe { max-width: 100%; height: auto; display: block; }
 .lightbox .close{ position:absolute; top:30px; right:40px; font-size:40px; color:#fff; cursor:pointer; font-weight:700; }
 
 /* ===== ABOUT / CTA BAND ===== */
-.about{ background:#fff; padding:80px 24px 40px; }
+.about{ background:#fff; padding:15px 24px 40px; }
 .about-grid{ display:grid; grid-template-columns: .95fr 1.05fr; gap:36px; align-items:center; }
 .about-card{ color:#fff; background:linear-gradient(135deg,#3F1485 0%, #612BB8 55%, #3F1485 100%); padding:36px 32px; border-radius:12px 12px 36px 12px; box-shadow:0 20px 40px rgba(20,20,60,.25); }
 .about-card h2{ font-size:28px; font-weight:900; margin-bottom:14px; }
