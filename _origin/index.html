@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>META DISTRIBUIDORA</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Font Awesome (ícones em todo o site) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="jquery.js" defer></script>
+</head>
+<body>
+  <!-- ===== HEADER (Topo branco + ícones FA) ===== -->
+  <header class="site-header">
+    <div class="container">
+      <img src="images/logo.png" alt="META DISTRIBUIDORA" class="logo"/>
+      <div class="contact-info">
+        <span>Fale com nossos especialistas:</span>
+        <a href="tel:08007464608"><i class="fa-solid fa-phone"></i> 0800 746-4608</a>
+        <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-left">
+        <img src="images/produtostopo.png" alt="Produtos META" class="products-img"/>
+      </div>
+
+      <div class="hero-right">
+        <h1>Catracas</h1>
+        <p>para controle de acesso</p>
+        <form class="contact-form" id="contato">
+          <input type="text" placeholder="Nome" required>
+          <input type="text" placeholder="CNPJ da Empresa" required>
+          <input type="email" placeholder="E-mail" required>
+          <input type="text" placeholder="Telefone/Whatsapp" required>
+          <textarea placeholder="Conte-nos qual sua necessidade..." required></textarea>
+          <button type="submit">Orçamento</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLUÇÕES / CARROSSEL (mantido) ===== -->
+  <section class="solutions">
+    <div class="container">
+      <h2 class="solutions-title">Soluções <span>avançadas</span> para seu controle de acesso</h2>
+
+      <div class="carousel">
+        <button class="nav prev" aria-label="Anterior">‹</button>
+        <div class="viewport">
+          <ul class="track">
+            <li class="slide">
+              <div class="product-card"><img src="images/produtos/p1.png" alt="Catraca PNE"></div>
+              <div class="product-info"><h3>Catraca<br>PNE</h3></div>
+            </li>
+            <li class="slide">
+              <div class="product-card"><img src="images/produtos/p1.png" alt="Catraca Evo Facial"></div>
+              <div class="product-info"><h3>Catraca Standard<br>com Evo Facial</h3></div>
+            </li>
+            <li class="slide">
+              <div class="product-card"><img src="images/produtos/p1.png" alt="Catraca Corporativa"></div>
+              <div class="product-info"><h3>Catraca<br>Corporativa</h3></div>
+            </li>
+            <li class="slide">
+              <div class="product-card"><img src="images/produtos/p1.png" alt="Catraca Slim"></div>
+              <div class="product-info"><h3>Catraca<br>Slim</h3></div>
+            </li>
+          </ul>
+        </div>
+        <button class="nav next" aria-label="Próximo">›</button>
+      </div>
+
+      <h3 class="caracts-title">Características</h3>
+      <div class="caracts-grid">
+        <div class="caract-card">
+          <i class="fa-solid fa-screwdriver-wrench caract-icon" aria-hidden="true"></i>
+          <p>Instalação<br>simplificada</p>
+        </div>
+        <div class="caract-card">
+          <i class="fa-solid fa-globe caract-icon" aria-hidden="true"></i>
+          <p>Modo de operação<br>on-line ou off-line</p>
+        </div>
+        <div class="caract-card">
+          <i class="fa-solid fa-person-running caract-icon" aria-hidden="true"></i>
+          <p>Braços anti-pânico<br>(opcional)</p>
+        </div>
+        <div class="caract-card">
+          <i class="fa-solid fa-shield-halved caract-icon" aria-hidden="true"></i>
+          <p>Acabamento em aço inox<br>escovado</p>
+        </div>
+      </div>
+
+      <div class="cta-wrap">
+        <a href="#contato" class="cta-gradient">Peça seu orçamento</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLUÇÕES PARA (ícones FA) ===== -->
+  <section class="solutions-for">
+    <div class="container">
+      <h2 class="solutions-for-title">Soluções para:</h2>
+      <div class="solutions-for-grid">
+        <div class="sf-item"><i class="fa-solid fa-school sf-icon"></i><p>Escolas e<br>Universidades</p></div>
+        <div class="sf-item"><i class="fa-solid fa-dumbbell sf-icon"></i><p>Academias</p></div>
+        <div class="sf-item"><i class="fa-solid fa-building sf-icon"></i><p>Edifícios<br>Comerciais</p></div>
+        <div class="sf-item"><i class="fa-solid fa-futbol sf-icon"></i><p>Clubes</p></div>
+        <div class="sf-item"><i class="fa-solid fa-industry sf-icon"></i><p>Indústrias</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMANDA FÁCIL (ícones FA) ===== -->
+  <section class="comanda">
+    <div class="container comanda-grid">
+      <div class="comanda-left">
+        <img src="images/comandas.jpg" alt="Catracas EVO Comanda"/>
+      </div>
+      <div class="comanda-right">
+        <h2 class="comanda-title"><span>Comanda</span><strong>fácil</strong></h2>
+        <p class="comanda-lead">
+          A Catraca Expedidora de Comandas <strong>da EVO</strong> acelera o processo de emissão
+          de comandas, eliminando filas e agilizando o atendimento.
+        </p>
+        <h3 class="comanda-sub">Soluções para:</h3>
+        <div class="comanda-icons">
+          <div class="ci-item"><i class="fa-solid fa-utensils"></i><p>Restaurantes</p></div>
+          <div class="ci-item"><i class="fa-solid fa-mug-hot"></i><p>Cafeterias</p></div>
+          <div class="ci-item"><i class="fa-solid fa-bread-slice"></i><p>Padarias</p></div>
+        </div>
+        <div class="comanda-chip">Comandas personalizadas</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIA ===== -->
+  <section class="galeria">
+    <div class="container">
+      <div class="galeria-slider">
+        <div class="galeria-track">
+          <img src="images/fotos/f1.jpg" alt="Foto 1">
+          <img src="images/fotos/f2.jpg" alt="Foto 2">
+          <img src="images/fotos/f3.jpg" alt="Foto 3">
+          <img src="images/fotos/f4.jpg" alt="Foto 4">
+          <img src="images/fotos/f5.jpg" alt="Foto 5">
+          <img src="images/fotos/f6.jpg" alt="Foto 6">
+          <img src="images/fotos/f7.jpg" alt="Foto 7">
+          <img src="images/fotos/f8.jpg" alt="Foto 8">
+          <img src="images/fotos/f9.jpg" alt="Foto 9">
+          <img src="images/fotos/f10.jpg" alt="Foto 10">
+        </div>
+      </div>
+    </div>
+    <div class="lightbox">
+      <span class="close">×</span>
+      <img class="lightbox-img" src="" alt="">
+      <div class="nav-btn prev">‹</div>
+      <div class="nav-btn next">›</div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE / CTA BAND ===== -->
+  <section class="about">
+    <div class="container about-grid">
+      <div class="about-card">
+        <h2>SOBRE A NOSSA EMPRESA</h2>
+        <p>A <strong>Tecnoponto</strong> é a maior e mais tradicional empresa
+          <strong>especializada em soluções</strong> para controle de ponto, controle de acesso
+          e automação empresarial em todo território nacional. Atuando desde
+          <strong>1960</strong>, a Tecnoponto é referência nos segmentos de ponto e acesso.</p>
+        <p>Com <strong>profissionais altamente qualificados</strong>, nossos serviços são prestados
+          com <strong>dedicação e transparência</strong>, entregando <strong>soluções eficazes e personalizadas</strong>
+          para cada projeto e cliente.</p>
+      </div>
+      <div class="about-photo"><img src="images/empresa.jpg" alt="Sede da empresa"/></div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container band-grid">
+      <div class="band-left">
+        <p>Fale com nossos especialistas e tenha a<br><strong>melhor solução</strong> em relógios de ponto.</p>
+      </div>
+      <div class="band-right">
+        <div class="band-contact">
+          <span class="band-icon"><i class="fa-solid fa-phone"></i></span>
+          <div>
+            <small>ATENDIMENTO DE SEGUNDA A SEXTA-FEIRA</small><br>
+            <strong>8h30 ÀS 17h30</strong><br>
+            <span class="band-phone">0800 746-4608</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MASCOTE + QR / CLIENTES / RODAPÉ ===== -->
+  <section class="contact-qr">
+    <div class="container qr-grid">
+      <div class="qr-left"><img src="images/mascote.png" alt="Atendimento"/></div>
+      <div class="qr-right">
+        <div class="qr-box">
+          <p class="qr-text">Escaneie o QR Code para mais informações e entre<br>em contato pelo WhatsApp.</p>
+          <img src="images/qrcode.png" alt="QR Code WhatsApp" class="qr-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="clients">
+    <div class="container">
+      <h3 class="clients-title">ALGUNS CLIENTES</h3>
+      <div class="clients-carousel">
+        <button class="c-nav c-prev" aria-label="Anterior">‹</button>
+        <div class="c-viewport">
+          <ul class="c-track">
+            <li class="c-item"><img src="images/clientes/01.png" alt="Cliente 01"></li>
+            <li class="c-item"><img src="images/clientes/02.png" alt="Cliente 02"></li>
+            <li class="c-item"><img src="images/clientes/03.png" alt="Cliente 03"></li>
+            <li class="c-item"><img src="images/clientes/04.png" alt="Cliente 04"></li>
+            <li class="c-item"><img src="images/clientes/05.png" alt="Cliente 05"></li>
+            <li class="c-item"><img src="images/clientes/06.png" alt="Cliente 06"></li>
+            <li class="c-item"><img src="images/clientes/07.png" alt="Cliente 07"></li>
+            <li class="c-item"><img src="images/clientes/08.png" alt="Cliente 08"></li>
+          </ul>
+        </div>
+        <button class="c-nav c-next" aria-label="Próximo">›</button>
+      </div>
+      <div class="c-dots" aria-label="Paginação do carrossel"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <nav class="footer-menu">
+        <a href="#">Relógio de Ponto</a>
+        <a href="#">Controle de Acesso</a>
+        <a href="#">Catracas</a>
+        <a href="#">Software</a>
+      </nav>
+      <img src="images/logorodape.png" alt="META DISTRIBUIDORA" class="footer-logo">
+    </div>
+  </footer>
+
+  <a class="whats-float" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <i class="fa-brands fa-whatsapp w-icon" aria-hidden="true"></i>
+  </a>
+</body>
+</html>

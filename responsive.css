@@ -1,0 +1,424 @@
+/* ===== RESPONSIVITY ===== */
+
+@media (max-width: 1024px){
+  .slide{ min-width:100%; }
+  .product-card{ width:260px; height:260px; margin:0 auto; }
+  .product-info h3{ font-size:32px; text-align:center; }
+  .caracts-grid{ grid-template-columns: repeat(2, 1fr); }
+  .solutions-for-grid{ grid-template-columns: repeat(3, 1fr); }
+  .comanda-grid{ grid-template-columns: 1fr; gap:28px; }
+
+  /* mobile only: posição do background por slide */
+  .main-banner .banner-slide[data-index="0"] {
+    background-position: left center;
+    background-size: cover;
+  }
+
+  .main-banner .banner-slide[data-index="1"] {
+    background-position: right center;
+    background-size: cover;
+  }
+
+  .main-banner .banner-slide[data-index="2"] {
+    background-position: left center;
+    background-size: cover;
+  }
+
+  /* conteúdo centralizado em mobile: texto e botão */
+  .banner-inner {
+    padding-left: 18px;
+    padding-right: 18px;
+    align-items: center;       /* centraliza horizontalmente */
+    text-align: center;        /* centraliza texto */
+    justify-content: flex-start !important;   /* posiciona mais ao centro verticalmente */
+    padding-top: min(30vh, 80px);
+    padding-bottom: 12px;
+  }
+
+  .banner-inner.align-right .cta-hero-right {
+    align-items: center!important;
+    text-align: center!important;
+    align-self: center!important;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 6.5vw, 1.9rem);
+    line-height: 1.12;
+    max-width: 90ch;
+    text-align:center;
+    line-height:1.5;
+    margin-top: 0;
+  }
+
+  /* CTA centralizado e com largura do conteúdo */
+  .cta-hero {
+    align-self: center;
+    width: auto;
+    padding: 10px 18px;
+    margin-top: 14px;
+  }
+
+  .site-header .container{ flex-direction:column; align-items:center; text-align:center; gap:10px; }
+  .contact-info{ flex-direction:column; gap:6px; }
+
+  /* tablets pequenos: manter centralização consistente */
+  .banner-inner{ padding-left:18px; padding-right:18px; align-items:center; text-align:center; justify-content:center; }
+  .banner-inner.align-right{ align-items:center; text-align:center; }
+
+  .about-grid{ grid-template-columns: 1fr; gap:18px; }
+  .about-photo{ order:-1; }
+  .about-card{ width:92%; margin:0 auto; text-align:center; }
+  .qr-grid{ grid-template-columns:1fr; }
+  .footer-grid{ grid-template-columns:1fr; justify-items:center; gap:12px; }
+
+  .galeria-track img{ height:200px; }
+  .solutions-for-grid{ grid-template-columns: repeat(2, 1fr); }
+
+  /* garantir que no breakpoint menor o banner continue ocupando a altura da viewport menos o header */
+  .main-banner {
+    height: calc(100vh - var(--header-height, 96px));
+    min-height: 360px;
+  }
+
+  /* Força subida do conteúdo do hero no mobile/tables — sobrescreve regras do style.css */
+  .main-banner .banner-slide.active .banner-inner,
+  .main-banner .banner-slide[data-index="0"] .banner-inner,
+  .main-banner .banner-slide[data-index="1"] .banner-inner,
+  .main-banner .banner-slide[data-index="2"] .banner-inner {
+    /* empurra conteúdo para cima, mantendo centralização horizontal */
+    justify-content: flex-start !important;
+    align-items: center !important;
+    text-align: center !important;
+
+    /* padding-top menor para subir o título; adjust se quiser subir mais/menos */
+    padding-top: clamp(10px, 5vh, 40px) !important;
+    padding-bottom: 12px !important;
+  }
+
+  /* Garantir que qualquer .align-right também fique centralizado no breakpoint */
+  .main-banner .banner-slide .banner-inner.align-right {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* Levantar um pouco o título se ainda estiver baixo (suave) */
+  .main-banner .banner-slide .hero-title {
+    margin-top: 0 !important;
+    transform: translateY(-4px);
+  }
+
+  /* Ajuste específico para o slide 2 (índice 1) caso precise ficar um pouco mais acima */
+  .main-banner .banner-slide[data-index="1"] .banner-inner {
+    padding-top: clamp(8px, 6vh, 48px) !important;
+  }
+
+  /* subir o banner-inner ~20% no mobile/tablet */
+  .main-banner .banner-slide .banner-inner {
+    transform: translateY(-20%) !important;
+    /* manter centralização horizontal */
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* remover pequenos translates aplicados ao título (evita dupla movimentação) */
+  .main-banner .banner-slide .hero-title {
+    transform: none !important;
+  }
+
+  .main-banner .banner-slide .cta-hero {
+    padding: 15px 27px !important;   /* 1.5x do padding móvel anterior (10px 18px) */
+    font-size: 1.125rem !important;   /* aumenta tamanho do texto (ajuste se quiser maior/menor) */
+    border-radius: 10px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.32) !important;
+    width: auto !important;
+  }
+
+  /* carousel: overlay text on image for mobile */
+  .carousel .slide {
+    position: relative !important;
+    display: block !important;
+    padding: 0 12px !important;
+  }
+
+  .carousel .slide .product-card {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    display: block !important;
+  }
+
+  .carousel .slide .product-card img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  /* posiciona o bloco de texto por cima da imagem */
+  .carousel .slide .product-info {
+    position: absolute !important;
+    left: 12px !important;
+    right: 12px !important;
+    bottom: 12px !important;
+    background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.65) 100%) !important;
+    color: #ffffff !important;
+    padding: 12px 14px !important;
+    border-radius: 8px !important;
+    text-align: left !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35) !important;
+    z-index: 5 !important;
+  }
+
+  .carousel .slide .product-info h3 {
+    color: #fff !important;
+    margin: 0 !important;
+    font-size: 1.125rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .carousel .slide .product-info p {
+    color: rgba(255,255,255,0.9) !important;
+    margin-top: 6px !important;
+    font-size: 0.95rem !important;
+  }
+
+  /* make carousel stack vertically so images can grow and navs sit below */
+  .carousel {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  /* ensure track takes full width */
+  .carousel .viewport,
+  .carousel .track {
+    width: 100% !important;
+  }
+
+  /* slide becomes full-width and image grows as much as possible */
+  .carousel .slide {
+    width: 100% !important;
+    padding: 0 12px !important;
+    display: block !important;
+  }
+
+  .carousel .product-card {
+    width: 100% !important;
+    max-width: 900px !important; /* allow larger images on bigger phones/tablets */
+    height: auto !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    margin: 0 auto !important;
+  }
+
+  .carousel .product-card img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 560px !important; /* restrict extreme height */
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  /* position nav buttons below the track/images and center them */
+  .carousel > .nav,
+  .carousel .nav {
+    position: relative !important;
+    order: 2 !important;              /* put after the track/slide */
+    margin: 8px 6px !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background: #eef2f7 !important;
+    color: #17324A !important;
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50% !important;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12) !important;
+    font-size: 22px !important;
+    right: auto !important;
+    left: auto !important;
+    transform: none !important;
+  }
+
+  /* if arrows are separate elements, group/center them by forcing parent alignment */
+  .carousel { justify-content: center !important; }
+
+  /* spacing for navs if there are two buttons side-by-side */
+  .carousel .nav + .nav { margin-left: 12px !important; }
+
+  /* ensure product-info overlay (if applied) stays readable on larger images */
+  .carousel .slide .product-info {
+    left: 12px !important;
+    right: 12px !important;
+    bottom: 12px !important;
+    max-width: calc(100% - 24px) !important;
+  }
+}
+
+/* Corrige quebras: 6 colunas em desktop/tablet grande; 2 colunas em <=1024px (mobile) */
+@media (min-width: 1025px) {
+  .solutions-for-grid {
+    /* garante 6 itens numa linha sem quebrar */
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    gap: 28px !important;
+    align-items: center !important;
+  }
+
+  .solutions-for-grid .sf-item {
+    justify-self: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* mobile/tablet: 2 colunas (2x2 quando houver 4 linhas etc.) */
+  .solutions-for-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 18px !important;
+  }
+
+  .solutions-for-grid .sf-item {
+    justify-self: center;
+    text-align: center;
+  }
+}
+
+/* Responsive: empilha e aumenta foco no botão para mobile/tablet (<=1024px) */
+@media (max-width: 1024px){
+  .download-band .band-grid{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+  }
+  .download-band .band-left{ max-width:100%; }
+  .download-band .band-title{ font-size: 1.35rem; }
+  .download-cta{
+    padding: 18px 26px;
+    font-size: 1.05rem;
+    border-radius: 14px;
+  }
+  .download-cta .pdf-icon{ font-size:1.35rem; padding:8px; }
+}
+
+:root {
+  --bg: #fff;
+  --card: #fff;
+  --text: #202124;
+  --muted: #5f6368;
+  --border: #e0e0e0;
+  --star: #fbbc04;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --card: #1e1e1e;
+    --text: #eaeaea;
+    --muted: #9aa0a6;
+    --border: #2a2a2a;
+  }
+}
+
+.reviews-component {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+}
+
+.reviews-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.score { font-size: 22px; font-weight: bold; }
+.stars { color: var(--star); letter-spacing: 2px; }
+.stars.small { font-size: 14px; }
+.count { font-size: 13px; color: var(--muted); }
+
+.reviews-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 14px;
+  will-change: transform;
+}
+
+.review-card {
+  min-width: 260px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  gap: 10px;
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,.12);
+}
+
+.review-card img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.review-card p {
+  font-size: 13px;
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+
+/* ===== MOBILE HEADER ===== */
+@media (max-width: 768px) {
+
+  .site-header {
+    padding: 16px 20px;
+  }
+
+  .site-header .container {
+    justify-content: center;
+  }
+}
+/* Oculta completamente texto e número do WhatsApp no mobile quando header encolhe */
+@media (max-width: 768px) {
+  .site-header.is-min .contact-info {
+    opacity: 0 !important;
+    height: 0 !important;
+    gap: 0 !important;
+    overflow: hidden !important;
+    transition: opacity 0.3s ease, height 0.3s ease, gap 0.3s ease;
+  .logo {
+    height: 50px; /* ligeiramente menor no mobile */
+  }
+
+  .site-header.is-min .contact-info span,
+  .site-header.is-min .contact-info a.whatsapp {
+    opacity: 0 !important;
+    height: 0 !important;
+    max-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    display: block !important;
+    pointer-events: none !important;
+  }
+}
+}
+
+
+
+
+
+
