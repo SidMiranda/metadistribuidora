@@ -418,29 +418,33 @@
 }
 
 @media (min-width: 768px) {
-  .eco-mobile {
+  .eco-mobile, .eco-mobile-logo, .container-eco {
     display: none;
-  }}
+  }
+}
   @media (max-width: 768px) {
   .eco-mobile {
     display: block;
     width: 100%;
-    margin: 0;
-  }}
-
-
-@media (min-width: 768px) {
-  .eco-desktop {
-    display: block;
+    margin-bottom: 50px;
+  }
+  .container-eco {
+    display: grid;
+    place-items: center;
     width: 100%;
     margin: 0;
-  }}
-  @media (max-width: 767px) {
+  }
+
+  .eco-mobile-logo {
+    display: block;
+    width: 60;
+    margin-top: 50px;
+  }
+
   .eco-desktop {
     display: none;
-    width: 100%;
-    margin: 0;
-  }}
+  }
+}
 
 
 

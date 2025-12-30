@@ -481,6 +481,12 @@ img, picture, video, iframe { max-width: 100%; height: auto; display: block; }
 
 
 
+.eco-desktop {
+    display: block;
+    width: 100%;
+    margin: 50px 0 50px 0;
+  }
+
 
 
 
