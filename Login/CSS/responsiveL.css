@@ -1,0 +1,49 @@
+
+@media (max-width: 768px) {
+  .login-stack {
+    transform: none; /* mobile sempre central */
+  }
+}
+
+@media (max-width: 420px) {
+  .login-top-logo {
+    max-width: 180x;
+    transform: translateY(26px);
+  }
+}
+
+@media (min-width: 768px) {
+  .login-wrapper {
+    justify-content: center;
+  }
+
+  .login-card {
+    max-width: 480px; /* ⬅️ mais largo */
+    padding: 40px 34px 44px; /* ⬅️ mais respiro interno */
+
+    background: rgba(255, 255, 255, 0.18); /* ⬅️ glass mais visível */
+    border: 1px solid rgba(255, 255, 255, 0.28);
+
+    box-shadow:
+      0 30px 70px rgba(0, 0, 0, 0.45); /* ⬅️ mais destaque */
+  }
+
+  .options {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .login-header h1 {
+    font-size: 1.8rem; /* ⬅️ título mais presente */
+  }
+}
+
+/* Neutraliza min-width em tablet e mobile */
+@media (max-width: 1024px) {
+  .login-card {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}

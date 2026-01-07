@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="CSS/styleL.css" />
+  <link rel="stylesheet" href="CSS/responsiveL.css" />
+</head>
+<body>
+
+  <main class="login-wrapper">
+
+        <button class="back-btn" onclick="history.back()" aria-label="Voltar">
+            🔙
+        </button>
+    <div class="login-stack">
+
+    <img src="IMG/LOGO BRANCO.svg" class="login-top-logo" alt="Logo">
+
+        <section class="login-card">
+
+        <header class="login-header">
+            <h1>Area do Revendedor</h1>
+        </header>
+
+        <form id="loginForm" novalidate>
+            
+            <div class="input-group">
+            <span class="icon">📧</span>
+            <input type="email" id="email" placeholder="Email corporativo" required />
+            </div>
+
+            <div class="input-group">
+            <span class="icon">🔒</span>
+            <input type="password" id="password" placeholder="Senha" required />
+            </div>
+
+            <div class="options">
+            <label class="remember">
+                <input type="checkbox" />
+                <span>Lembrar-me</span>
+            </label>
+
+            <a href="#" class="forgot" hidden>Esqueci a senha</a>
+            </div>
+
+            <div class="error-message" id="errorMessage">
+            Usuário ou senha incorreta
+            </div>
+
+            <button type="submit" class="login-btn">
+                <span class="btn-text">Login</span>
+                <span class="btn-loader"></span>
+            </button>
+
+
+        </form>
+        </section>
+    </div>
+  </main>
+
+  <script src="JS/scriptL.js"></script>
+</body>
+</html>

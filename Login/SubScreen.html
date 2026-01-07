@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro • Meta Distribuidora</title>
+
+  <link rel="stylesheet" href="CSS/styleS.css" />
+  <link rel="stylesheet" href="CSS/responsiveS.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+
+
+  <main class="page-wrapper">
+
+    <button class="back-btn" onclick="history.back()" aria-label="Voltar">
+            🔙
+        </button>
+
+    <section class="glass-card">
+
+      <img src="IMG/LOGO BRANCO.svg" alt="Meta Distribuidora" class="logo-meta" />
+
+      <form id="registerForm" novalidate>
+
+        <div class="input-group">
+          <input type="text" id="name" placeholder="Sua empresa">
+          <span class="error">Nome da empresa</span>
+        </div>
+
+        <div class="input-group">
+          <input type="email" id="email" placeholder="E-mail">
+          <span class="error">Insira um e-mail válido</span>
+        </div>
+
+        <!-- WHATSAPP -->
+        <div class="input-group phone-group">
+          <div class="phone-wrapper">
+
+            <div class="custom-select" id="ddiSelect">
+              <span class="selected">🇧🇷 +55</span>
+              <ul class="options">
+                <li data-value="+55">🇧🇷 +55</li>
+                <li data-value="+1">🇺🇸 +1</li>
+                <li data-value="+44">🇬🇧 +44</li>
+                <li data-value="+54">🇦🇷 +54</li>
+              </ul>
+            </div>
+
+            <input
+              type="tel"
+              id="phone"
+              placeholder="WhatsApp"
+              inputmode="numeric"
+              autocomplete="tel"
+            />
+          </div>
+
+          <span class="error">Insira um número de WhatsApp válido</span>
+        </div>
+
+        <!--<div class="input-group">
+          <input type="password" id="password" placeholder="Senha">
+          <span class="error">Insira uma senha</span>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="confirm" placeholder="Confirmar senha">
+          <span class="error">As senhas não coincidem</span>
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="company" placeholder="Empresa (opcional)">
+        </div>-->
+
+        <button type="submit" class="btn primary">
+          Criar cadastro
+        </button>
+
+        <p class="footer-text">
+          Já possui conta?
+          <a href="LoginScreen.html">Faça login</a>
+        </p>
+
+      </form>
+    </section>
+  </main>
+
+  <script src="cadastro.js"></script>
+</body>
+</html>
