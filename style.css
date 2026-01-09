@@ -477,9 +477,9 @@ img, picture, video, iframe { max-width: 100%; height: auto; display: block; }
 }
 
 .download-band .band-left { max-width: 76%; }
-.download-band .band-lead { font-size: 0.95rem; opacity: .95; margin: 0 0 6px; font-weight:700; }
-.download-band .band-title { font-size: 1.6rem; margin: 0 0 8px; letter-spacing: -0.01em; font-weight:900; }
-.download-band .band-sub { margin: 0; opacity: .95; font-size: 0.95rem; line-height:1.45; }
+.download-band .band-lead { font-size: 1.6rem; opacity: .95; margin: 0 0 6px; font-weight:700; }
+.download-band .band-title { font-size: 1.9rem; margin: 0 0 8px; letter-spacing: -0.01em; font-weight:900; }
+.download-band .band-sub { margin: 0; opacity: .95; font-size: 1.5rem; line-height:1.45; }
 
 /* Download button */
 .download-cta{
