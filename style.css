@@ -320,7 +320,7 @@ img, picture, video, iframe { max-width: 100%; height: auto; display: block; }
   position:relative; padding:72px 24px; color:#fff;
   background: linear-gradient(0deg, rgba(0,0,0,.25), rgba(0,0,0,.25)), url('images/bg.jpg') center/cover no-repeat;
 }
-.solutions-for-title{ text-align:center; font-size:36px; font-weight:800; margin-bottom:28px; }
+.solutions-for-title{ text-align:center; font-size:36px; font-weight:800; margin-bottom:60px; }
 .solutions-for-grid{ display:grid; grid-template-columns: repeat(5, 1fr); gap:28px; text-align:center; }
 .sf-item{ display:flex; flex-direction:column; align-items:center; gap:14px; }
 .sf-icon{ font-size:95px; }
